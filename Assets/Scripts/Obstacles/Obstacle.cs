@@ -7,5 +7,11 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Collider))]
 public class Obstacle : MonoBehaviour
 {
-	private void OnTriggerEnter(Collider other) => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.layer == 8)//player
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
 }
