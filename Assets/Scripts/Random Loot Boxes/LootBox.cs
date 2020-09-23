@@ -19,7 +19,7 @@ public class LootBox : MonoBehaviour
 
 	private void PickUpRandomItem(PlayerLootBoxItem Player)
 	{
-		var item = PotentialPickups[Random.Range(0, PotentialPickups.Count)];
+		var item = PotentialPickups.RandomElement();
 		Player.CurrentItem = item;
 	}
 }

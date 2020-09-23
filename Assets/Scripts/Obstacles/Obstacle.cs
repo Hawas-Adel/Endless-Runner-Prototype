@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour
 	{
 		if (other.gameObject.layer == 8)//player
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			GameplayManager.Instance.Lose();
 		}
 	}
 }
