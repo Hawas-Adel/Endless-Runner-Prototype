@@ -7,3 +7,4 @@ Change Log:
 3.	Added Obstacles<br/>
 	Added Loot Boxes (Random boosts)
 4.	Added Projectiles and Firing
+5.	Added Coins
