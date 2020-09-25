@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda839f050080ff4aa6501d57bbf785d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartSceneREF: Grass Scene 1
+  StartSceneREF: Heights 1
   MainMenuREF: {fileID: 1958326169}
   SettingsMenuREF: {fileID: 1108451350}
 --- !u!114 &629691130

@@ -4,5 +4,19 @@ using UnityEngine;
 
 public class CoinCollector : MonoBehaviour
 {
-	[System.NonSerialized] public int CoinsCoint = 0;
+	public CoinType CoinType;
+	[System.NonSerialized] public int Score = 0;
+
+	public void TakeCoin(Coin Coin)
+	{
+		if (CoinType == Coin.CoinType)
+		{
+			Score += Coin.MatchingScoreWorth;
+		}
+		else
+		{
+			Score += Coin.NonMatchingScoreWorth;
+		}
+		Debug.Log($"{name}'s score =  {Score}");
+	}
 }
